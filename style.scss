@@ -1,0 +1,29 @@
+$bluegrey: #2b3a42;
+$light: #e1e6e9;
+$dark-shadow: rgba(23, 31, 35, 0.5);
+// ##################
+
+html{
+  margin: 10px;
+  padding: 10px;
+  overflow-x: hidden;
+  // ################
+
+  body{
+    margin: 10px;
+    padding: 10px;
+    overflow-x: hidden;
+    // ################
+
+    #txts {
+      padding: 8px 16px;
+      background: $bluegrey;
+      color: $light;
+      font-family: Menlo, Courier, monospace;
+      font-size: 13px;
+      line-height: 1.5;
+      text-shadow: 0 1px 0 $dark-shadow;
+      border-radius: 3px;
+    }
+  }
+}

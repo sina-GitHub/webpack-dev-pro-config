@@ -1,0 +1,50 @@
+1- npm install webpack webpack-cli --save-dev
+
+2- create build folder - html and js file
+
+3- create config file for webpack -> webpack.config.js
+
+4- npm run dev runs webpack to create development build
+
+5- npm run build runs webpack to create production build
+
+6- Modules: npm run build can do "tree shaking"
+
+7- Loaders: 
+    installing some Loaders:
+    npm install -D babel-loader @babel/core @babel/preset-env
+    npm install --save @babel/polyfill
+    npm i @babel/plugin-syntax-dynamic-import
+
+8- adding module:{} to webpack.config.js file
+
+9- creating .babelrc file to config babel
+
+10- installing sass Loaders:
+    npm i --save-dev style-loader css-loader sass-loader node-sass
+
+11- installing file loader:
+    npm install --save-dev file-loader
+
+12- Code spliting:
+        adding {} to entry and out put part to add several files into them
+        13- adding the "dynamic import" part to the main JS file...
+        14- after clicking on the button we can see the new chunk file,
+            that is added to the document in browsernetwork tab.
+
+15- spitting developement and production settings:
+    change name of webpack.config.js to webpack.common.js
+    create webpack.prod.js
+    create webpack.dev.js
+    merging all webpack files with: npm install --save-dev webpack-merge
+
+16- Plugins:
+    in dev: process.env.NODE_ENV  ---->  development 
+        NamedModulesPlugins 
+
+    in production: process.env.NODE_ENV  ---->  production
+        UglifyJsPlugin
+        ModuleConcatenationPlugin
+        NoEmitOnErrorsPlugin
+    working with Plugins:
+        // later...
